@@ -18,9 +18,16 @@ N,M は整数である。
 class Solution:
     @staticmethod
     def ordering(n: int, m: int) -> str:
-        pass
+        res = ""
+        for k in range(1, m + 1):
+            if n ** k <= 10 ** 9:
+                res += "o"
+            else:
+                res += "x" * (m - len(res))
+                return res
+        return res
 
 
 if __name__ == '__main__':
-    N, M = 1000, 5
+    N, M = map(int, input().split())
     print(Solution().ordering(N, M))
