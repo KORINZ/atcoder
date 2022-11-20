@@ -9,7 +9,7 @@
 ## [PAST過去問](https://atcoder.jp/contests/archive?ratedType=0&category=50&keyword=)
 
 - [第11回 アルゴリズム実技検定 過去問](https://atcoder.jp/contests/past202206-open)
-
+- [第10回 アルゴリズム実技検定 過去問](https://atcoder.jp/contests/past202203-open)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
