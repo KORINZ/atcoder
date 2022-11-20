@@ -21,11 +21,14 @@ from typing import List
 
 
 class Solution:
+    def __init__(self):
+        pass
+
     @staticmethod
     def similar_words(n: int, ab: List, s: str, t: str) -> bool:
         pass
 
 
 if __name__ == '__main__':
-
+    pass
     # print(Solution().similar_words())
