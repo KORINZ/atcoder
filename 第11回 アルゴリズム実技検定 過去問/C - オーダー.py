@@ -18,14 +18,14 @@ N,M は整数である。
 class Solution:
     @staticmethod
     def ordering(n: int, m: int) -> str:
-        res = ""
+        o = []
         for k in range(1, m + 1):
             if n ** k <= 10 ** 9:
-                res += "o"
+                o.append("o")
             else:
-                res += "x" * (m - len(res))
-                return res
-        return res
+                x = ["x" for x in range(m - len(o))]
+                return ''.join(o+x)
+        return ''.join(o)
 
 
 if __name__ == '__main__':
