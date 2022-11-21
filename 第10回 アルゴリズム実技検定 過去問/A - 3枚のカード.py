@@ -14,7 +14,7 @@ A,B,C は整数
 
 class Solution:
     @staticmethod
-    def three_cards(a: int, b: int, c: int):
+    def three_cards(a: int, b: int, c: int) -> str:
         product_res = [a * b, a * c, b * c]
         return ' '.join(map(str, [min(product_res), max(product_res)]))
 
