@@ -14,10 +14,11 @@ A,B,C は整数
 
 class Solution:
     @staticmethod
-    def three_cards(a: int, b: int, c: int) -> int:
-        pass
+    def three_cards(a: int, b: int, c: int):
+        product_res = [a * b, a * c, b * c]
+        return ' '.join(map(str, [min(product_res), max(product_res)]))
 
 
 if __name__ == '__main__':
-    pass
-    # print(Solution().three_cards())
+    A, B, C = map(int, input().split())
+    print(Solution().three_cards(A, B, C))
