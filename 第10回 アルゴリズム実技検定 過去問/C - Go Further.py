@@ -26,7 +26,16 @@ z=1000y
 class Solution:
     @staticmethod
     def go_further(a: int) -> str:
-        pass
+        list_a = [c for c in str(a)]
+        if len(list_a) % 3 != 0:
+            head = len(list_a) % 3
+        else:
+            head = 3
+        res = ''.join([c for c in list_a[0:head]])
+
+        tail = (len(list_a) - head) // 3 - 1
+        res += chr(97 + tail)  # chr(97) = "a"
+        return res
 
 
 if __name__ == '__main__':
