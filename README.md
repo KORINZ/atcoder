@@ -1,6 +1,7 @@
 <a name="readme-top"></a>
 
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![LinkedIn][linkedin-shield]][linkedin-url] [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
+
 <!-- PROJECT TITLE -->
 <div align="center">
 <h1 align="center">AtCoderの提出</h1>
