@@ -20,9 +20,12 @@
 
 class Solution:
     @staticmethod
-    def attraction(h: int, w: int, h_s: int, w_s: int) -> str:
-        pass
+    def attraction(h_rule: int, w_rule: int, h_takahashi: int, w_takahashi: int) -> str:
+        return 'Yes' if h_takahashi >= h_rule and w_takahashi <= w_rule else 'No'
 
 
 if __name__ == '__main__':
-    pass
+    input_H_W, input_h_w = input(), input()
+    H, W = map(int, input_H_W.split())
+    h, w = map(int, input_h_w.split())
+    print(Solution().attraction(H, W, h, w))
