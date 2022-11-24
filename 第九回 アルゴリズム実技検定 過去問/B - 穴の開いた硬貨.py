@@ -17,16 +17,25 @@ B_i 円を支払い、高橋くんはそれぞれの客に対し硬貨の総数�
 1≤A_i≤B_i≤10^3
 入力は全て整数である。
 """
+from typing import List
 
 
 class Solution:
     @staticmethod
-    def coins_with_open_hole(guest_number: int, *price_pay: list[list[int]]) -> int:
-        pass
+    def coins_with_open_hole(price_and_pay: List[List[int]]) -> int:
+        change = [pair[1] - pair[0] for pair in price_and_pay]
+        coins_with_hole = 0
+        for n in change:
+            if n % 100 != 0:
+                n = n % 100
+            if 50 <= n < 100:
+                coins_with_hole += 1
+            if n % 10 >= 5:
+                coins_with_hole += 1
+        return coins_with_hole
 
 
 if __name__ == '__main__':
     N = int(input())
     A_B = [list(map(int, input().split())) for i in range(N)]
-    print(Solution().coins_with_open_hole(N, A_B))
-
+    print(Solution().coins_with_open_hole(A_B))
