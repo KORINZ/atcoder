@@ -21,9 +21,12 @@ B_i 円を支払い、高橋くんはそれぞれの客に対し硬貨の総数�
 
 class Solution:
     @staticmethod
-    def coins_with_open_hole():
+    def coins_with_open_hole(guest_number: int, *price_pay: list[list[int]]) -> int:
         pass
 
 
 if __name__ == '__main__':
-    pass
+    N = int(input())
+    A_B = [list(map(int, input().split())) for i in range(N)]
+    print(Solution().coins_with_open_hole(N, A_B))
+
