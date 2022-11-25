@@ -23,21 +23,19 @@ from typing import List
 
 class Solution:
     @staticmethod
-    def atcoder(n: int, pv: List[List[str]]):
-        grade_book = {chr(65 + i): 0 for i in range(6)}
+    def atcoder(n: int, pv: List[List[str]]) -> dict.values:
+        grade_book = {chr(65 + i): 0 for i in range(6)}  # char(65) = "A"
 
         for i in range(n):
             if pv[i][1] == 'AC' and grade_book[pv[i][0]] == 0:
                 grade_book[pv[i][0]] += i + 1
             else:
                 pass
-        ans = list(grade_book.values())
-        return ans
+        return grade_book.values()
 
 
 if __name__ == '__main__':
     N = int(input())
     P_V = [list(map(str, input().split())) for i in range(N)]
-    ANS = Solution().atcoder(N, P_V)
-    for j in ANS:
+    for j in Solution().atcoder(N, P_V):
         print(j)
