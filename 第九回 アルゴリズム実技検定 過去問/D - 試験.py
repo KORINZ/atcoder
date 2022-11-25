@@ -24,9 +24,17 @@ from typing import List
 
 class Solution:
     @staticmethod
-    def atcoder_high(n: int, grades: List[List[int]]) -> List:
-        pass
+    def atcoder_high(n: int, math_grade: List[int], english_grade: List[int]) -> List:
+        student_id = [i + 1 for i in range(n)]
+        total_grade = [math_grade[i] + english_grade[i] for i in range(n)]
+        grade_book = list(zip(total_grade, math_grade, student_id))
+
+        for i in reversed(range(2)):
+            grade_book = sorted(grade_book, key=lambda x: x[i], reverse=True)
+
+        return [i[2] for i in grade_book]
 
 
 if __name__ == '__main__':
-    pass
+    N, A, B = int(input()), list(map(int, input().split())), list(map(int, input().split()))
+    print(*Solution().atcoder_high(N, A, B))
