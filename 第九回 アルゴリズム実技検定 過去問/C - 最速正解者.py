@@ -38,6 +38,6 @@ class Solution:
 if __name__ == '__main__':
     N = int(input())
     P_V = [list(map(str, input().split())) for i in range(N)]
-    ans = Solution().atcoder(N, P_V)
-    for j in ans:
+    ANS = Solution().atcoder(N, P_V)
+    for j in ANS:
         print(j)
