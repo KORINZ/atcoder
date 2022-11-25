@@ -39,5 +39,5 @@ if __name__ == '__main__':
     N = int(input())
     P_V = [list(map(str, input().split())) for i in range(N)]
     ans = Solution().atcoder(N, P_V)
-    for n in ans:
-        print(n)
+    for j in ans:
+        print(j)
