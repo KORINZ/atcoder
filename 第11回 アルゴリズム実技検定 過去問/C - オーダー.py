@@ -24,7 +24,7 @@ class Solution:
                 o.append("o")
             else:
                 x = ["x" for x in range(m - len(o))]
-                return ''.join(o+x)
+                return ''.join(o + x)
         return ''.join(o)
 
 
