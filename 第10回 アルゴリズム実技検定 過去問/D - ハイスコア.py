@@ -21,8 +21,21 @@ from typing import List
 
 class Solution:
     @staticmethod
-    def high_score(t_n: List[int]):
-        pass
+    def high_score(p: List[List[int]]) -> List[int]:
+        current_high_score = p[0]
+        score_list = [sum(current_high_score)]
+
+        for i in p[1:]:
+            for j in range(len(i)):
+                if i[j] > current_high_score[j]:
+                    current_high_score[j] = i[j]
+            score_list.append(sum(current_high_score))
+
+        return score_list
+
 
 if __name__ == '__main__':
-    pass
+    T_N = list(map(int, input().split()))
+    P = [list(map(int, input().split())) for i in range(T_N[0])]
+    for i in Solution().high_score(P):
+        print(i)
