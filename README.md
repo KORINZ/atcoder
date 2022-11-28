@@ -4,7 +4,7 @@
 
 <!-- PROJECT TITLE -->
 <div align="center">
-<h1 align="center">AtCoderの提出</h1>
+<h1 align="center"><a href="https://atcoder.jp/?lang=ja">AtCoder</a>の提出</h1>
 </div>
 
 ## [PAST過去問](https://atcoder.jp/contests/archive?ratedType=0&category=50&keyword=) (時間: 300 分)
