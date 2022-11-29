@@ -17,11 +17,11 @@ from typing import List
 
 class Solution:
     @staticmethod
-    def appearance(n: int, x: int, a: List[int]) -> int:
-        pass
+    def appearance(x: int, a: List[int]) -> int:
+        return a.count(x)
 
 
 if __name__ == '__main__':
     N, X = map(int, input().split())
     A = [int(i) for i in input().split()]
-    print(Solution.appearance(N, X, A))
+    print(Solution.appearance(X, A))
