@@ -1,4 +1,5 @@
 """
+https://atcoder.jp/contests/past202203-open/tasks/past202203_d
 実行時間制限: 2 sec / メモリ制限: 1024 MB
 配点 : 7 点
 
