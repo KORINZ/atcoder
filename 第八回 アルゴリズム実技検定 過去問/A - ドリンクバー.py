@@ -21,8 +21,11 @@ from typing import List
 class Solution:
     @staticmethod
     def drink_bar(a_b_c_d: List[int]) -> int:
-        pass
+        a, b, c, d = a_b_c_d
+        with_coupon, without_coupon = a + b - c, d
+        return min(with_coupon, without_coupon)
 
 
 if __name__ == '__main__':
-    pass
+    A_B_C_D = [int(i) for i in input().split()]
+    print(Solution.drink_bar(A_B_C_D))
