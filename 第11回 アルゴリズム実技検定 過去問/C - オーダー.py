@@ -24,7 +24,7 @@ class Solution:
             if n ** k <= 10 ** 9:
                 o.append("o")
             else:
-                x = ["x" for x in range(m - len(o))]
+                x = ["x" for _ in range(m - len(o))]
                 return ''.join(o + x)
         return ''.join(o)
 
