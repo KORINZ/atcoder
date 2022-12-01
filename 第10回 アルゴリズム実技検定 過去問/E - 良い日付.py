@@ -20,8 +20,8 @@ S は 2001 年 1 月 1 日以降 2999 年 12 月 31 日以前である。
 class Solution:
     @staticmethod
     def good_date(s: str) -> str:
-        s = int(''.join(s.split("/")))
-        starting_year = s // 10000
+        s = ''.join(s.split("/"))
+        starting_year = eval(s + ' // 10000')
 
         for yyyy in range(starting_year, 3001):
             for mm in range(2, 13):
@@ -32,10 +32,10 @@ class Solution:
                     if len(set(date)) != 2:  # skip if the length of set(date) is not uniquely 2
                         continue
 
-                    if str(s) <= date:
+                    if s <= date:
                         return date[:4] + "/" + date[4:6] + "/" + date[6:]
 
 
 if __name__ == '__main__':
     S = str(input())
-    print(Solution().good_date(S))
+    print(Solution.good_date(S))
