@@ -13,6 +13,7 @@
 - [第10回 アルゴリズム実技検定 過去問](https://atcoder.jp/contests/past202203-open) (2022-03-05(土) 13:00)
 - [第九回 アルゴリズム実技検定 過去問](https://atcoder.jp/contests/past202112-open) (2021-12-11(土) 13:00)
 - [第八回 アルゴリズム実技検定 過去問](https://atcoder.jp/contests/past202109-open) (2021-09-18(土) 13:00)
+- [第七回 アルゴリズム実技検定 過去問](https://atcoder.jp/contests/past202107-open) (2021-07-03(土) 13:00)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
