@@ -19,12 +19,25 @@ from typing import List
 
 class Solution:
     @staticmethod
-    def buy_t_shirt(n: int, k: int, c: List[int], p: List[int]) -> int:
-        pass
+    def buy_t_shirt(k: int, c: List[int], p: List[int]) -> int:
+        bought = dict()
+
+        for c_i, p_i in zip(c, p):
+
+            if c_i not in bought:
+                bought[c_i] = p_i
+
+            if p_i < bought[c_i]:
+                bought[c_i] = p_i
+
+        if len(bought.keys()) < k:
+            return -1
+        else:
+            return sum(sorted(bought.values())[:k])
 
 
 if __name__ == '__main__':
     N, K = map(int, input().split())
     C = [int(i) for i in input().split()]
     P = [int(i) for i in input().split()]
-    print(Solution.buy_t_shirt(N, K, C, P))
+    print(Solution.buy_t_shirt(K, C, P))
