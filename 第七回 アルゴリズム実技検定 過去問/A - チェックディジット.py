@@ -19,9 +19,16 @@ S は 0, … , 9 のみからなる
 
 class Solution:
     @staticmethod
-    def check_digit():
-        pass
+    def check_digit(s: str) -> str:
+        odd_sum = sum([int(i) for i in s[:14][::2]]) * 3
+        even_sum = sum([int(i) for i in s[1:][::2]])
+
+        if (odd_sum + even_sum) % 10 == int(s[-1]):
+            return 'Yes'
+        else:
+            return 'No'
 
 
 if __name__ == '__main__':
-    pass
+    S = str(input())
+    print(Solution.check_digit(S))
