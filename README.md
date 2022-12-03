@@ -3,8 +3,8 @@
 [![LinkedIn][linkedin-shield]][linkedin-url] [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
 
 <!-- PROJECT TITLE -->
-<div align="center">
-<h1 align="center"><a href="https://atcoder.jp/?lang=ja">AtCoder</a>の提出</h1>
+<div text-align="center">
+<h1 text-align="center"><a href="https://atcoder.jp/?lang=ja">AtCoder</a>の提出</h1>
 </div>
 
 ## [PAST過去問](https://atcoder.jp/contests/archive?ratedType=0&category=50&keyword=)
