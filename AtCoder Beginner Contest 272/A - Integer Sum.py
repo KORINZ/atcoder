@@ -12,13 +12,16 @@ N 個の整数を合計した値を求めてください。
 1≤A_i≤100
 入力はすべて整数
 """
+from typing import List
 
 
 class Solution:
     @staticmethod
-    def integer_sum():
-        pass
+    def integer_sum(a: List[int]) -> int:
+        return sum(a)
 
 
 if __name__ == '__main__':
-    pass
+    N = input()
+    A = [int(i) for i in input().split()]
+    print(Solution.integer_sum(A))
