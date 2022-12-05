@@ -11,6 +11,7 @@
 
 ### ABCクラス (時間: 100 分)
 - [AtCoder Beginner Contest 272](https://atcoder.jp/contests/abc272) (2022-10-08(土) 21:00)
+- [AtCoder Beginner Contest 266](https://atcoder.jp/contests/abc266) (2022-08-27(土) 21:00)
 
 ### アルゴリズム実技検定 過去問 (時間: 300 分)
 - [第11回 アルゴリズム実技検定 過去問](https://atcoder.jp/contests/past202206-open) (2022-06-04(土) 13:00)
