@@ -15,9 +15,14 @@ A,B,C は整数
 
 class Solution:
     @staticmethod
-    def vapor_pressure():
-        pass
+    def vapor_pressure(a: int, b: int, c: int) -> float:
+        if b * c < a:
+            a = b * c
+            return a / b
+        else:
+            return a / b
 
 
 if __name__ == '__main__':
-    pass
+    A, B, C = map(int, input().split())
+    print(Solution.vapor_pressure(A, B, C))
