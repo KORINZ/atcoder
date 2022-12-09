@@ -16,3 +16,21 @@ S は 0 から 9 の数字からなる文字列
 0≤L≤R≤10^9
 L と R は整数
 """
+
+
+class Solution:
+    @staticmethod
+    def check_input(s: str, left: int, right: int) -> str:
+        if s[0] == "0" and len(s) != 1:
+            return 'No'
+
+        if left <= int(s) <= right:
+            return 'Yes'
+        else:
+            return 'No'
+
+
+if __name__ == '__main__':
+    S = input()
+    L, R = map(int, input().split())
+    print(Solution.check_input(S, L, R))
