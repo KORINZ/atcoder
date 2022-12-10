@@ -16,3 +16,27 @@ S の(連続する)部分文字列で、axa , ixi , uxu , exe , oxo のいずれ
 1≤N≤2×10^5
 S は 英小文字からなる長さ N の文字列。
 """
+
+
+class Solution:
+    @staticmethod
+    def replace_strings(s: str) -> str:
+        result = ""
+        match_sets = {"axa", "ixi", "uxu", "exe", "oxo"}
+
+        i = 0
+        while i < len(s):
+            if s[i:i + 3] in match_sets:
+                result += "..."
+                i += 3
+            else:
+                result += s[i]
+                i += 1
+
+        return result
+
+
+if __name__ == '__main__':
+    N = int(input())
+    S = input()
+    print(Solution.replace_strings(S))
