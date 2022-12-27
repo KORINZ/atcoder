@@ -24,18 +24,14 @@ class Solution:
         starting_year = eval(s + ' // 10000')
 
         for yyyy in range(starting_year, 3001):
-            for mm in range(2, 13):
-                for dd in range(1, 23):
-
+            for mm in range(1, 13):
+                for dd in range(1, 31):
                     date = str(yyyy) + f"{mm:02}" + f"{dd:02}"
 
-                    if len(set(date)) != 2:  # skip if the length of set(date) is not uniquely 2
-                        continue
-
-                    if s <= date:
+                    if len(set(date)) == 2 and int(s) <= int(date):
                         return date[:4] + "/" + date[4:6] + "/" + date[6:]
 
 
 if __name__ == '__main__':
-    S = str(input())
+    S = input()
     print(Solution.good_date(S))
