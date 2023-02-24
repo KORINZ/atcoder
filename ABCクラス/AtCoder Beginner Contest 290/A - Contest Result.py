@@ -16,3 +16,17 @@ N 問の問題からなるコンテストが開催され、i (1≤i≤N)問目�
 1≤B_1<B_2<…<B_M≤N
 入力は全て整数
 """
+from typing import List
+
+
+class Solution:
+    @staticmethod
+    def find_contest_score(points: List[int], correct_questions: List[int]) -> int:
+        return sum([points[question - 1] for question in correct_questions])
+
+
+if __name__ == '__main__':
+    N, M = map(int, input().split())
+    A = [int(n) for n in input().split()]
+    B = [int(n) for n in input().split()]
+    print(Solution.find_contest_score(A, B))
