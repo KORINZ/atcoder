@@ -10,6 +10,7 @@
 ## [PAST過去問](https://atcoder.jp/contests/archive?ratedType=0&category=50&keyword=)
 
 ### ABCクラス (時間: 100 分)
+- [AtCoder Beginner Contest 290](https://atcoder.jp/contests/abc290) (2023-02-19(日) 21:00)
 - [AtCoder Beginner Contest 272](https://atcoder.jp/contests/abc272) (2022-10-08(土) 21:00)
 - [AtCoder Beginner Contest 266](https://atcoder.jp/contests/abc266) (2022-08-27(土) 21:00)
 - [AtCoder Beginner Contest 241](https://atcoder.jp/contests/abc241) (2022-02-26(土) 21:00)
